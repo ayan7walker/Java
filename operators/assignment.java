@@ -16,12 +16,12 @@ public class assignment {
 
 
         int d= 10;
-        d%=20;
+        d%=20;//d = 10/20
 
         System.out.println(A);
         System.out.println(B);
         System.out.println(d);
-        
+
 
     }
 
