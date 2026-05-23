@@ -1,0 +1,22 @@
+package array;
+
+import java.util.Scanner;
+
+public class arr {
+    public static void main(String args[]) {
+
+        int marks[] = new int[100];
+
+        Scanner sc = new Scanner(System.in);
+
+        marks[0] = sc.nextInt();
+        marks[1] = sc.nextInt();
+        marks[2] = sc.nextInt();
+
+        int total = marks[0] + marks[1] + marks[2];
+      
+        System.out.println(total);
+
+    }
+}
+
