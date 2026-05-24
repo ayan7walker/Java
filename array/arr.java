@@ -12,9 +12,13 @@ public class arr {
         marks[0] = sc.nextInt();
         marks[1] = sc.nextInt();
         marks[2] = sc.nextInt();
-
         int total = marks[0] + marks[1] + marks[2];
-      
+        System.out.println("physics  marks "+ marks[0]);
+        System.out.println("Chemistry  marks "+ marks[1]);
+        System.out.println("Math  marks "+ marks[2]);
+
+        
+    
         System.out.println(total);
 
     }
