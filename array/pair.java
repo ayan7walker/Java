@@ -1,4 +1,4 @@
-public class arr{
+public class pair {
 
     public static void printPairs(int numbers[]) {
 
