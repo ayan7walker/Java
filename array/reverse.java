@@ -1,27 +1,33 @@
 package array;
 
+import java.util.*;
+
 public class reverse {
-    public static void main(String[] args) {
 
-        int[] arr = {1, 2, 3, 4, 5};
+    public static void reverse(int numbers[]) {
 
-        int start = 0;
-        int end = arr.length - 1;
+        int first = 0, last = numbers.length - 1;
 
-        while (start < end) {
+        while (first < last) {
+            int temp = numbers[last];
 
-            // swap
-            int temp = arr[start];
-            arr[start] = arr[end];
-            arr[end] = temp;
+            numbers[last] = numbers[first];
+            numbers[first] = temp;
 
-            start++;
-            end--;
-        }
-
-        // print reversed array
-        for (int num : arr) {
-            System.out.print(num + " ");
+            first++;
+            last--;
         }
     }
+
+    public static void main(String args[]) {
+        int numbers[] = {2, 4, 6, 8, 10};
+
+        reverse(numbers);
+
+        // print
+        for (int i = 0; i < numbers.length; i++) {
+            System.out.print(numbers[i] + " ");
+        }
+    }
+    
 }
