@@ -1,11 +1,13 @@
 package array;
+//brute force 
 
 public class maxsubarray {
 
     public static int maxSubarraySum(int[] numbers) {
         int currSum = 0;
-        int maxSum = Integer.MIN_VALUE;
 
+        int maxSum = Integer.MIN_VALUE;
+      
         for (int i = 0; i < numbers.length; i++) {
             int start = i;
 
@@ -14,7 +16,7 @@ public class maxsubarray {
                 currSum = 0;
 
                 for (int k = start; k <= end; k++) {
-                    currSum += numbers[k]; // ✅ Bug 1 fixed
+                    currSum += numbers[k]; 
                 }
 
                 System.out.println(currSum);
