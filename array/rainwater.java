@@ -38,8 +38,8 @@ public static int trappedRainwater(int height[]) {
 
 
     public static void main (String args[]){   //main function
- int height[] ={4,2,0,6,3,2,5};
-
+ int height[] ={4,2,0,1,3,2,5};
+    System.out.println(trappedRainwater(height));
     }
     
 }
