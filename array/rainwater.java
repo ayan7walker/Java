@@ -10,7 +10,7 @@ public static int trappedRainwater(int height[]) {
 
     // Left Max
     int leftMax[] = new int[n];
-    leftMax[0] = height[0];
+    leftMax[0] = height[0];                      //why???
 
     for(int i=1; i<n; i++) {
         leftMax[i] = Math.max(height[i], leftMax[i-1]);

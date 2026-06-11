@@ -16,6 +16,8 @@ public class reverse {
 
             first++;
             last--;
+
+            
         }
     }
 
@@ -29,5 +31,5 @@ public class reverse {
             System.out.print(numbers[i] + " ");
         }
     }
-    
+
 }
